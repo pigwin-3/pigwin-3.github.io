@@ -1,0 +1,101 @@
+.imgtop {
+    min-height: 110vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    justify-content: center;
+    text-align: center;
+}
+.no-webp .imgtop {
+    background-image: url(../img/havetouched.png);
+}
+.webp .imgtop {
+    background-image: url(../img/havetouched.webp);
+}
+#boxtop {
+    color:#FFFFFF;
+    height: 30vh;
+    justify-content: center;
+}
+#boxtop2 {
+    color:#FFFFFF;
+    height: 5vh;
+    justify-content: center;
+}
+#boxmid {
+    color:#FFFFFF;
+    height: 30vh;
+    font-size: 4vh;
+    justify-content: center;
+}
+#boxlow {
+    display: flex;
+    justify-content: center;
+    color:#FFFFFF;
+    height: 20vh;
+    align-items: center;
+}
+.box {
+    display: flex;
+    height: 50vh;
+    font-size: 4vh;
+    justify-content: center;
+}
+#online {
+    width: 50%;
+    justify-self: center;
+    color: white;
+    font-size: 5vh;
+    font-weight: 900;
+}
+/*rescaleing*/
+@media  all and (max-width: 420px) {
+    #boxtop {
+        height: 10vh;
+    }
+    #boxmid {
+        height: 35vh;
+        font-size: 3vh;
+    }
+    #boxlow {
+        height: 20vh;
+    }
+    #online {
+        width: 80%;
+        font-size: 4vh;
+    }
+    .imgtop {
+        height: auto;
+        min-height: 100vh;
+    }
+    .box {
+        height: auto;
+        font-size: 4vh;
+        flex-direction: column;
+        width: 100%;
+        padding: 1.5%;
+    }
+}
+@media  all and (max-width: 869px) {
+    #boxtop {
+        height: 12vh;
+    }
+    #boxmid {
+        height: 35vh;
+        font-size: 3vh;
+    }
+    #boxlow {
+        height: 20vh;
+    }
+    #online {
+        width: 50%;
+        font-size: 4vh;
+    }
+    .box {
+        height: auto;
+        font-size: 4vh;
+        flex-direction: column;
+        width: 100%;
+        padding: 1.5%;
+    }
+}
