@@ -16,7 +16,7 @@ ul{
     list-style-type: none;
 }
 .item a{
-    color: white;
+    color: #DCDDD3;
     text-decoration: none;
 }
 a:hover{
@@ -63,7 +63,7 @@ a:hover{
 
 /*makes hamburgur*/
 .bars{
-    background: rgb(216, 216, 216);
+    color: #DCDDD3;
     display: inline-block;
     height: 2px;
     position: relative;
@@ -71,7 +71,7 @@ a:hover{
 }
 
 .bars::before,.bars::after{
-    background: rgb(216, 216, 216);
+    color: #DCDDD3;
     content: "";
     display: inline-block;
     height: 2px;

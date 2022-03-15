@@ -8,16 +8,41 @@
 }
 .pfbox {
     width: 80%;
-    background-color: rgb(206, 206, 206);
+    background-color: #36393F;
     text-align: left;
     font-size: 4vh;
     max-width: 320px;
     margin: 0.5%;
     border-radius: 5%;
     padding: 0.5%;
+    color: #DCDDD3;
 }
 .pfinfo {
     height: 75%;
     width: 100%;
     font-size: 3.5vh;
+}
+.outbox {
+    display: flex;
+    height: 50vh;
+    font-size: 4vh;
+    justify-content: center;
+}
+@media  all and (max-width: 600px) {
+    .outbox {
+        height: auto;
+        font-size: 4vh;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 0.5%;
+    }
+    .pfbox {
+        width: 90%;
+        font-size: 3.5vh;
+    }
+    .pfinfo {
+        width: 100%;
+        font-size: 3vh;
+    }
+    
 }
