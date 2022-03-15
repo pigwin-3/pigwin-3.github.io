@@ -10,13 +10,13 @@ body{
 }
 nav{
     background: #111;
-    padding: 0px 20px;
+    padding: 10px 20px;
 }
 ul{
     list-style-type: none;
 }
 .item a{
-    color: #DCDDD3;
+    color: white;
     text-decoration: none;
 }
 a:hover{
@@ -33,7 +33,7 @@ a:hover{
 }
 
 .logo a img{
-    height: 8vh;
+    height: 30px;
 }
 
 /*for mobile*/
@@ -63,7 +63,7 @@ a:hover{
 
 /*makes hamburgur*/
 .bars{
-    color: #DCDDD3;
+    background: rgb(216, 216, 216);
     display: inline-block;
     height: 2px;
     position: relative;
@@ -71,7 +71,7 @@ a:hover{
 }
 
 .bars::before,.bars::after{
-    color: #DCDDD3;
+    background: rgb(216, 216, 216);
     content: "";
     display: inline-block;
     height: 2px;
