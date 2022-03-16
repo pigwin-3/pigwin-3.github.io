@@ -1,0 +1,122 @@
+/*changes evrything*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*makes text look nice :)*/
+body{
+    font-family: sans-serif;
+}
+nav{
+    background: #111;
+    padding: 10px 20px;
+}
+ul{
+    list-style-type: none;
+}
+.item a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color:blanchedalmond;
+}
+.menu li{
+    font-size: 1em;
+    padding: 10px 5px;
+}
+ /*makes entire block clickable*/
+.menu li a{
+    display: block;
+}
+
+.logo a img{
+    height: 30px;
+}
+
+/*for mobile*/
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle{
+    order: 1;
+}
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+.item.active{
+    display: block;
+}
+
+/*makes mouse look diferant*/
+.toggle{
+    cursor: pointer;
+}
+
+/*makes hamburgur*/
+.bars{
+    background: rgb(216, 216, 216);
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before,.bars::after{
+    background: rgb(216, 216, 216);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+.bars::before{
+    top: 5px;
+}
+.bars::after{
+    top: -5px;
+}
+
+/*smul computa*/
+
+@media all and (min-width: 464px) {
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex: 1;
+    }
+    .toggle{
+        order: 2;
+    }
+}
+
+/*computa*/
+
+@media  all and (min-width: 816px) {
+    .item{
+        display: block;
+        width: auto;
+        order: 1;
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }
+    .menu li.sok{
+        padding-right: 0;
+    }
+}
