@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--website ver1-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="the ofisial FSMbot webstite">
+    <title>FSMbot</title>
+    <link rel="icon" href="../img/favico.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="form.css">
+    <!--sco improvements-->
+    <!--theme-color-->
+    <meta name="theme-color" content="#451818"/>
+    <!--improve load speed-->
+    <script src="../js/webp.js"></script>
+    <!--sco improvements end-->
+
+    <!--mobile menu-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function() {
+
+        $(".toggle").on("click", function(){
+
+          if($(".item").hasClass("active")){
+            $(".item").removeClass("active")
+          }
+          else{
+            $(".item").addClass("active")
+          }
+
+        })
+
+      });
+    </script>
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+      <li class="logo"><a href="../index.html" alt="logo link"><img id=logo src="../img/FSMbotW.png" alt="logo"></a></li>
+      <li class="item"><a href="../index.html">Home</a></li>
+      <li class="item"><a href="../credits.html">Credits</a></li>
+      <li class="item"><a href="../about.html">Commands</a></li>
+      <li class="item"><a href="https://discord.gg/HtsRhRCF38">Discord</a></li>
+      <li class="toggle"><span class="bars"></span></li>
+    </ul>
+  </nav>
+  <div class="imgtop">
+    <div class="formusboxus">
+        <div class="formbox">
+            <div id="title">𝐟𝐨𝐫𝐦</div>
+            <div id="question">A box for whatever you want</div>
+            <form onsubmit="sendContact(event)">
+              <form onsubmit="sendContact(event)">
+                <div class="disnem">
+                  <label for="discordinput" class="form-label">Enter your discord name</label>
+                  <input type="text" class="formctr" id="discordinput" placeholder="name#1234" required>
+                </div>
+                <div class="mesinp">
+                  <label for="messageInput" class="form-label">Enter your message</label>
+                  <textarea class="formctr" id="messageInput" placeholder="Your Fact" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+              <a href="sugestiontupe.html" id="other">
+                <div class="tap">Other sugestion type</div>
+              </a>
+              <script>
+                async function sendContact(ev) {
+                  ev.preventDefault();
+          
+                  const senderEmail = document
+                    .getElementById('discordinput').value;
+                  const senderMessage = document
+                    .getElementById('messageInput').value;
+          
+                  const webhookBody = {
+                    embeds: [{
+                      title: 'Other Form Submitted',
+                      fields: [
+                        { name: 'Sender', value: senderEmail },
+                        { name: 'Message', value: senderMessage }
+                      ]
+                    }],
+                  };
+          
+                  const webhookUrl = 'https://discord.com/api/webhooks/953744068024877056/tHk4etcy0OKM2Cs4Qj_goZRl_4kYLA0ziqqtYFgstApE2Kzg3AjVgnWP4_aCJsy8q9vT';
+          
+                  const response = await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(webhookBody),
+                  });
+          
+                  if (response.ok) {
+                    alert('I have received your message!');
+                    location.href = "thanks.html";
+                  } else {
+                    alert('There was an error! Try again later!');
+                  }
+                }
+              </script>
+        </div>
+    </div>
+  </div>
+</body>
+<!--website made and menatained by pigwin-->
