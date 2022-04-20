@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="the official FSMbot webstite">
+    <meta name="description" content="the ofisial FSMbot webstite">
     <title>FSMbot</title>
     <link rel="icon" href="../img/favico.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/navbar.css">
@@ -52,7 +52,7 @@
     <div class="formusboxus">
         <div class="formbox">
             <div id="title">𝐟𝐨𝐫𝐦</div>
-            <div id="question">feature sugestions</div>
+            <div id="question">Image sugestions</div>
             <form onsubmit="sendContact(event)">
               <form onsubmit="sendContact(event)">
                 <div class="disnem">
@@ -60,8 +60,8 @@
                   <input type="text" class="formctr" id="discordinput" placeholder="name#1234" required>
                 </div>
                 <div class="mesinp">
-                  <label for="messageInput" class="form-label">Enter your message</label>
-                  <textarea class="formctr" id="messageInput" placeholder="Your Fact" rows="3" required></textarea>
+                  <label for="messageInput" class="form-label">Your image</label>
+                  <textarea class="formctr" id="messageInput" placeholder="image url" rows="3" required></textarea>
                 </div>
                 <button type="submit" class="btn">Submit</button>
               </form>
@@ -79,7 +79,7 @@
           
                   const webhookBody = {
                     embeds: [{
-                      title: 'Feachure Form Submitted',
+                      title: 'Image Form Submitted',
                       fields: [
                         { name: 'Sender', value: senderEmail },
                         { name: 'Message', value: senderMessage }
@@ -87,7 +87,7 @@
                     }],
                   };
           
-                  const webhookUrl = 'https://discord.com/api/webhooks/953742441826095126/EQ0TLh9y9EPZEkx4tkKPvOk1JDAETKXzp_ZxP_VoTx3i0npbHvswy8VwLXifp36WC-Pe';
+                  const webhookUrl = 'https://discord.com/api/webhooks/953604411614175282/Kop0R8IbmoDjO4f4Lpv_y1DbECXYf2HXa7sjdUObhWPulrKDczLiZBoQhV-1cUiUfctI';
           
                   const response = await fetch(webhookUrl, {
                     method: 'POST',

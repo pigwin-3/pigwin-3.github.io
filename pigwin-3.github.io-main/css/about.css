@@ -1,0 +1,144 @@
+#boximg1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    margin: 0.5%;
+    border-radius: 5%;
+    order: 0;
+}
+.no-webp #boximg1 {
+    background-image: url(../img/ping.png);
+}
+.webp #boximg1 {
+    background-image: url(../img/ping.webp);
+}
+#boximg2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    margin: 0.5%;
+    border-radius: 5%;
+    order: 2;
+}
+.no-webp #boximg2 {
+    background-image: url(../img/help.png);
+}
+.webp #boximg2 {
+    background-image: url(../img/help.webp);
+}
+#boximg3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    margin: 0.5%;
+    border-radius: 5%;
+    order: 1;
+}
+.no-webp #boximg3 {
+    background-image: url(../img/image.png);
+}
+.webp #boximg3 {
+    background-image: url(../img/image.webp);
+}
+#boximg4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    margin: 0.5%;
+    border-radius: 5%;
+    order: 2;
+}
+.no-webp #boximg4 {
+    background-image: url(../img/fact.png);
+}
+.webp #boximg4 {
+    background-image: url(../img/fact.webp);
+}
+#boximg5 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    margin: 0.5%;
+    border-radius: 5%;
+    order: 0;
+}
+.no-webp #boximg5 {
+    background-image: url(../img/info.png);
+}
+.webp #boximg5 {
+    background-image: url(../img/info.webp);
+}
+.boxtxt {
+    width: 30%;
+    background-color: rgb(206, 206, 206);
+    text-align: left;
+    font-size: 3.5vh;
+    max-width: 320px;
+    margin: 0.5%;
+    border-radius: 5%;
+    padding: 0.5%;
+    order: 1;
+}
+/*rescaleing*/
+@media  all and (max-width: 420px) {
+    .boxtxt {
+        width: 100%;
+        max-width: 420px
+    }
+    #boximg1 {
+        width: 100%;
+        order: 0;
+        height: 30vh;
+    }
+    #boximg2 {
+        width: 100%;
+        order: 0;
+        height: 30vh;
+    }
+    #boximg3 {
+        width: 100%;
+        order: 0;
+        height: 30vh;
+    }
+    #boximg4 {
+        width: 100%;
+        order: 0;
+        height: 30vh;
+    }
+    #boximg5 {
+        width: 100%;
+        order: 0;
+        height: 30vh;
+    }
+}
+@media  all and (max-width: 869px) {
+    .boxtxt {
+        width: 100%;
+        max-width: 869px
+    }
+    #boximg1 {
+        width: 100%;
+        order: 0;
+        height: 30vh;
+    }
+    #boximg2 {
+        width: 100%;
+        order: 0;
+        height: 30vh;
+    }
+    #boximg3 {
+        width: 100%;
+        order: 0;
+        height: 30vh;
+    }
+    #boximg4 {
+        width: 100%;
+        order: 0;
+        height: 30vh;
+    }
+    #boximg5 {
+        width: 100%;
+        order: 0;
+        height: 30vh;
+    }
+}
